@@ -19,7 +19,7 @@ Route::get('/appointment', function () {
 });
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 Route::post('/appointment/submit', [AppointmentController::class, 'store']);
 Route::post('/contact/submit', [ContactController::class, 'store']);
 
